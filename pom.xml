@@ -10,6 +10,7 @@
     <url>https://github.com/javaguru-ch/spritemesh</url>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring.version>4.1.5.RELEASE</spring.version>
         <sitemesh.version>3.0.0</sitemesh.version>
         <servlet.version>3.0.1</servlet.version>
