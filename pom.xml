@@ -1,8 +1,8 @@
 <project>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.decore.spritemesh</groupId>
+    <groupId>ch.decore.spritemesh</groupId>
     <artifactId>spritemesh</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>spritemesh</name>
@@ -26,14 +26,16 @@
 
     <scm>
         <url>https://github.com/javaguru-ch/spritemesh</url>
-        <connection>scm:git:https://github.com/javaguru-ch/spritemesh</connection>
+        <connection>scm:git:git://github.com/javaguru-ch/spritemesh.git</connection>
+        <developerConnection>scm:git:git@github.com:javaguru-ch/spritemesh.git</developerConnection>
     </scm>
 
     <developers>
         <developer>
-            <id>thierry.messer</id>
+            <id>javaguru-ch</id>
             <name>Thierry Messer</name>
             <email>thierry.messer@gmail.com</email>
+            <url>https://github.com/javaguru-ch</url>
         </developer>
     </developers>
 
@@ -56,7 +58,7 @@
                     <execution>
                         <id>attach-sources</id>
                         <goals>
-                            <goal>jar</goal>
+                            <goal>jar-no-fork</goal>
                         </goals>
                     </execution>
                 </executions>
@@ -125,5 +127,16 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
 
 </project>

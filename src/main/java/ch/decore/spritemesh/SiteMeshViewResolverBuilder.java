@@ -1,4 +1,4 @@
-package org.decore.spritemesh;
+package ch.decore.spritemesh;
 
 import org.sitemesh.SiteMeshContext;
 import org.sitemesh.builder.BaseSiteMeshBuilder;

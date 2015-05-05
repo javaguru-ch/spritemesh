@@ -1,4 +1,4 @@
-package org.decore.spritemesh;
+package ch.decore.spritemesh;
 
 import org.sitemesh.BaseSiteMeshContext;
 import org.sitemesh.config.PathMapper;
